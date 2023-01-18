@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import logo from 'C:\\Users\\hp\\OneDrive\\Desktop\\PROJECTS\\Airbnb\\RENT\\rental-app\\src\\images\\Airbnb-logo.png'
+import logo from '.\\src\\images\\Airbnb-logo.png'
 // import SearchIcon from "@material-ui/icons/Search";
 // import SearchIcon from '@material-ui/icons/Search';
 // import SearchIcon from '@mui/icons-material/Search';
