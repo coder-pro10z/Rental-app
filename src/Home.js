@@ -6,7 +6,7 @@ function Home() {
   return (
     <div>
         <div className='home'>
-            <h1>Home Component</h1>
+            {/* <h1>Home Component</h1> */}
             <Banner/>
         </div>
     </div>
