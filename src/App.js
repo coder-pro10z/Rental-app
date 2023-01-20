@@ -3,30 +3,37 @@ import './App.css';
 import Home from './Home.js'
 import Header from './Header.js'
 import Footer from './Footer';
-
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import SearchPage from './SearchPage';
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Home/>
-      <Footer/>
+      <Router>
+        <Header/>
 
-      {/* Home */}
-        {/* header */}
+        <Routes>
+          {/* / */}
+          {/* <Route path="/">
+          <Home/>
+          </Route> */}
+          <Route path='/' element={<Home/>} />
+          <Route path='/search' element={<SearchPage/>} />
+          {/* searchPage */}
+          {/* <Route path='/search'>
+          <SearchPage/>
+          </Route> */}
+        </Routes>
 
-        {/*Banner*/}
-            {/* Search */}
+        <Footer/>
 
-        {/* Cards */}
-
-        {/* Footer */}
+      </Router>
 
         {/* Searchpage */}
             {/* header */}
           
             {/* ..... */}
     </div>
-  );
+  ); 
 }
 
 export default App;

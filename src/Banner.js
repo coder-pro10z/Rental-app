@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './Banner.css'
 import Search from './Search.js'
+import {useNavigate} from "react-router-dom"
 function Banner() {
+    const navigate=useNavigate();
     const [showSearch,setShowSearch]=useState(false)
   return (
     <div className='banner'>
@@ -15,7 +17,7 @@ function Banner() {
         <div className='banner_info'>
             <h1>Get out and Stretch your imagination!</h1>
             <h5>Plan a different kind of getaway to uncover the hideen gems near you.</h5>
-            <button variant='outlined'>Explore Nearby </button>
+            <button onClick={()=>navigate('/search')} variant='outlined'>Explore Nearby </button>
         </div> 
 
     </div>
